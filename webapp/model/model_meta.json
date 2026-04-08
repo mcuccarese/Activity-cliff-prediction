@@ -1,0 +1,52 @@
+{
+  "target_variable": "sali_sensitivity",
+  "sali_definition": "|delta_pActivity| / (max_rgroup_n_heavy + 1)",
+  "feature_names": [
+    "ctx_n_donor_4A",
+    "ctx_n_acceptor_4A",
+    "ctx_n_hydrophobic_4A",
+    "ctx_n_aromatic_4A",
+    "ctx_sasa_attach",
+    "ctx_gasteiger_charge",
+    "ctx_n_rotbonds_2",
+    "ctx_is_aromatic_attach",
+    "ctx_n_heavy_4A",
+    "core_n_heavy",
+    "core_n_rings"
+  ],
+  "n_training_rows": 598173,
+  "n_features": 11,
+  "n_targets_trained_on": 50,
+  "y_mean": 0.04372309520840645,
+  "y_std": 0.03408275172114372,
+  "y_p25": 0.026316342875361443,
+  "y_p75": 0.050317224115133286,
+  "y_p90": 0.07316035926342014,
+  "hyperparameters": {
+    "max_iter": 300,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "min_samples_leaf": 50,
+    "random_state": 42
+  },
+  "validation_metrics": {
+    "ndcg_at_3": 0.9101,
+    "hit_at_1": 0.48,
+    "spearman": 0.3449,
+    "heuristic_ndcg_at_3": 0.7913,
+    "random_ndcg_at_3": 0.839
+  },
+  "feature_importances": {
+    "ctx_n_donor_4A": 0.0123,
+    "ctx_n_acceptor_4A": 0.0309,
+    "ctx_n_hydrophobic_4A": 0.0282,
+    "ctx_n_aromatic_4A": 0.0579,
+    "ctx_sasa_attach": 0.1081,
+    "ctx_gasteiger_charge": 0.1694,
+    "ctx_n_rotbonds_2": 0.0435,
+    "ctx_is_aromatic_attach": 0.0226,
+    "ctx_n_heavy_4A": 0.0604,
+    "core_n_heavy": 0.1841,
+    "core_n_rings": 0.2825
+  }
+}
