@@ -21,6 +21,7 @@ outputs/
 # Exception: webapp models needed for Streamlit deployment
 !webapp/model/position_hgb.pkl
 !webapp/model/change_type_hgb.pkl
+!webapp/model/evidence_index.pkl
 
 # LaTeX build artifacts
 *.aux
