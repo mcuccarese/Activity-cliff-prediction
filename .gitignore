@@ -18,6 +18,9 @@ outputs/
 *.pkl
 *.pickle
 *.onnx
+# Exception: webapp models needed for Streamlit deployment
+!webapp/model/position_hgb.pkl
+!webapp/model/change_type_hgb.pkl
 
 # LaTeX build artifacts
 *.aux
